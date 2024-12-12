@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task4</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body{
+            background-image: url("https://i0.wp.com/picjumbo.com/wp-content/uploads/free-autumn-background-with-orange-leaves-and-space-for-text-free-image.jpeg?w=600&quality=80");
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+           height: auto;
+            position: relative;
+            top: 10vh;
+           
+        }
+        #maincontainer{
+            height: 80vh;
+            box-shadow: 10px 10px 10px 10px black;
+            width: 50vw;
+            display: flex;
+            flex-direction: column;
+        }
+        #maincontainer>h2{
+            text-align: center;
+            color: white;
+        }
+        button{
+            padding: 5px;
+            cursor: pointer;
+        }
+        #toggle-password{
+            cursor: pointer;
+        }
+        table{
+            width: 80%;
+            align-self: center;
+            height: 80%;
+            color: white;
+            cursor: default;
+            text-align: center;
+        }
+        input{
+            padding: 10px;
+        }
+     
+        p{
+            cursor: pointer;
+            
+            
+        }
+        #nousername,#nopassword,#nocnpassword{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="maincontainer">
+        <h2>Create Login</h2>
+        <table>
+            <tr>
+                <td>Student UserName</td>
+                <td>
+                    <input placeholder="Enter User Name" type="text" name="username" id="name">
+                    <p id="nousername">****please Enter User Name*****</p>
+                </td>
+            </tr>
+            <tr>
+                <td>User E-Mail</td>
+                <td>
+                    <input placeholder="Enter Email" type="email" name="usermail" id="email">
+                </td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>
+                    <input placeholder="Enter Password" type="password" name="userpassword" id="password">
+                    <p id="nopassword">***Plase Enter the password***</p>
+                </td>
+            </tr>
+            <tr>
+                <td>Confirm Password</td>
+                <td><input placeholder="Confirm Password" type="password" name="cnpassword" id="cnpassword">
+                    <i class="fas fa-eye toggle-password" id="toggle-password"></i>
+                    <p id="nocnpassword">****Password Mismatched****</p>
+                </td>
+            </tr>
+            <tr >
+                <td colspan="2"><button id="submit">Submit</button></td>
+            </tr>
+            <tr>
+                <td colspan="2"><p>Already have an account?login</p></td>
+            </tr>
+        </table>
+
+    </div>
+
+    <script src="../JavaScript/task4.js"></script>
+</body>
+</html>
